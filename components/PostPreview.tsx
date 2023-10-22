@@ -1,4 +1,4 @@
-import Avatar from 'components/AuthorAvatar'
+// import Avatar from 'components/AuthorAvatar'
 import CoverImage from 'components/CoverImage'
 import Date from 'components/PostDate'
 import type { Post } from 'lib/sanity.queries'
@@ -13,7 +13,7 @@ export default function PostPreview({
   slug,
 }: Omit<Post, '_id'>) {
   return (
-    <div>
+    <div className="mx-auto max-w-[48rem]">
       <div className="mb-5">
         <CoverImage
           slug={slug}
@@ -31,7 +31,7 @@ export default function PostPreview({
         <Date dateString={date} />
       </div>
       {excerpt && <p className="mb-4 text-lg leading-relaxed">{excerpt}</p>}
-      {author && <Avatar name={author.name} picture={author.picture} />}
+      {/* {author && <Avatar name={author.name} picture={author.picture} />} */}
     </div>
   )
 }
