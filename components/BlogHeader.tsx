@@ -15,19 +15,28 @@ export default function BlogHeader({
   switch (level) {
     case 1:
       return (
-        <header className="w-full relative top-0 left-0 right-0 h-24 flex justify-center items-center">
-          <h1 className="text-2xl">{title}</h1>
+        <header className="flex flex-col items-center justify-center gap-4 px-8 py-8">
+          <Link href="/">
+            <img
+              src="/Gavin.jpg"
+              alt="Gavin Hall, Designer"
+              className="h-24 w-24 rounded-full  shadow"
+            />
+          </Link>
+          {/* <h1 className="font-semibold">{title}</h1> */}
         </header>
       )
 
     case 2:
       return (
-        <header className="w-full relative top-0 left-0 right-0 h-24 flex justify-center items-center">
-          <h1 className="text-2xl">
-            <Link href="/" className="hover:underline">
-              {title}
-            </Link>
-          </h1>
+        <header className="flex flex-col items-center justify-center gap-4 px-8 py-8">
+          <Link href="/">
+            <img
+              src="/Gavin.jpg"
+              alt="Gavin Hall, Designer"
+              className="h-24 w-24 rounded-full  shadow"
+            />
+          </Link>
         </header>
       )
 

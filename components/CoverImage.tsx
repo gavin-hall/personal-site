@@ -15,11 +15,11 @@ export default function CoverImage(props: CoverImageProps) {
   const image = source?.asset?._ref ? (
     <div
       className={cn('w-full', {
-        'transition-shadow duration-200 hover:shadow-medium': slug,
+        'hover:shadow-medium transition-shadow duration-200': slug,
       })}
     >
       <Image
-        className="h-auto w-full"
+        className="h-auto w-full rounded-sm"
         width={2000}
         height={1400}
         alt={`Cover Image for ${title}`}

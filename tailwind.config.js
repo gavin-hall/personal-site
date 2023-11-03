@@ -26,6 +26,9 @@ module.exports = {
       lineHeight: {
         tight: 1.2,
       },
+      fontFamily: {
+        heading: ['"Clash Display"'],
+      },
       fontSize: {
         '5xl': '2.5rem',
         '6xl': '2.75rem',

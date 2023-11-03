@@ -11,9 +11,9 @@ import * as demo from 'lib/demo.data'
 import { Settings, settingsQuery } from 'lib/sanity.queries'
 
 export default async function og(req: NextRequest, res: NextResponse) {
-  const font = fetch(new URL('public/Inter-Bold.woff', import.meta.url)).then(
-    (res) => res.arrayBuffer(),
-  )
+  const font = fetch(
+    new URL('public/ClashDisplay-Regular.woff2', import.meta.url),
+  ).then((res) => res.arrayBuffer())
   const { searchParams } = new URL(req.url)
 
   let title = searchParams.get('title')
@@ -35,10 +35,10 @@ export default async function og(req: NextRequest, res: NextResponse) {
       height,
       fonts: [
         {
-          name: 'Inter',
+          name: 'Clash',
           data: await font,
           style: 'normal',
-          weight: 700,
+          weight: 400,
         },
       ],
     },
