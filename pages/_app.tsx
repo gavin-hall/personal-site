@@ -1,5 +1,5 @@
 import 'tailwindcss/tailwind.css'
-
+import '../public/styles.css'
 import { AppProps } from 'next/app'
 import { lazy } from 'react'
 

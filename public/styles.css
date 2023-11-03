@@ -1,0 +1,18 @@
+/* /public/font.css */
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/ClashDisplay-Regular.woff2') format('woff2');
+  /* Add other font properties here like font-weight, font-style, etc. if needed */
+}
+
+/* Import your font in your main CSS file (e.g., tailwind.css) */
+@import url('/font.css');
+
+html,
+body {
+  @apply bg-[#F7FAF7] text-[#1C1D1C];
+}
+a {
+  @apply text-[#1C1D1C] hover:text-[#282D2A];
+}

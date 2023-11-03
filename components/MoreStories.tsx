@@ -3,7 +3,7 @@ import type { Post } from 'lib/sanity.queries'
 
 export default function MoreStories({ posts }: { posts: Post[] }) {
   return (
-    <section className="mx-auto max-w-2xl py-12">
+    <section className="mx-auto py-12">
       <div className="">
         {posts.map((post) => (
           <PostPreview
